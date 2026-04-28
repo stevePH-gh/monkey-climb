@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://y8oqg2isemgq"]
+
+[ext_resource type="Texture2D" uid="uid://c5k5ivxg1nu30" path="res://assets/godot.png" id="1_0m4pk"]
+[ext_resource type="Script" uid="uid://b850d0yhnj2ed" path="res://assets/Scenes/Godot/icon.gd" id="2_yqoxe"]
+
+[node name="GodotIntro" type="Node2D" unique_id=1178539236]
+
+[node name="base color" type="ColorRect" parent="." unique_id=1346178733]
+offset_left = -74.0
+offset_right = 887.0
+offset_bottom = 1297.0
+color = Color(0.14117648, 0.14117648, 0.14117648, 1)
+
+[node name="icon" type="Sprite2D" parent="." unique_id=670309090]
+position = Vector2(360, 600)
+texture = ExtResource("1_0m4pk")
+script = ExtResource("2_yqoxe")

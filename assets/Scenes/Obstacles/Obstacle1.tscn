@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://c3yuycmgo8tkd"]
+
+[ext_resource type="Script" uid="uid://cc8v5nfmto72b" path="res://assets/Scenes/Obstacles/obstacle_1.gd" id="1_tlf0p"]
+[ext_resource type="Texture2D" uid="uid://dfiyi81iqapfc" path="res://assets/sprites/obstacles/snake_anim.png" id="2_tlf0p"]
+[ext_resource type="Script" uid="uid://lk7q77bkhchl" path="res://assets/Scenes/Obstacles/snake.gd" id="3_7afyi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7afyi"]
+atlas = ExtResource("2_tlf0p")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qppwe"]
+atlas = ExtResource("2_tlf0p")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16ncg"]
+atlas = ExtResource("2_tlf0p")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqtkt"]
+atlas = ExtResource("2_tlf0p")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1738"]
+atlas = ExtResource("2_tlf0p")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsluv"]
+atlas = ExtResource("2_tlf0p")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n1y7o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7afyi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qppwe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16ncg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqtkt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1738")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsluv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tlf0p"]
+size = Vector2(48, 54.018017)
+
+[node name="Node2D" type="Node2D" unique_id=993853784]
+
+[node name="Obstacle1" type="Area2D" parent="." unique_id=687751442]
+z_index = 1
+scale = Vector2(0.333, 0.333)
+script = ExtResource("1_tlf0p")
+
+[node name="snake" type="AnimatedSprite2D" parent="Obstacle1" unique_id=689498465]
+texture_filter = 1
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_n1y7o")
+frame_progress = 0.92110014
+script = ExtResource("3_7afyi")
+
+[node name="collision_snake" type="CollisionShape2D" parent="Obstacle1" unique_id=1738641127]
+position = Vector2(0, 8.990992)
+shape = SubResource("RectangleShape2D_tlf0p")
+debug_color = Color(0.96, 0, 0, 0.41960785)

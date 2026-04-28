@@ -1,0 +1,507 @@
+[gd_scene format=3 uid="uid://cfinm0jm35j2b"]
+
+[ext_resource type="Texture2D" uid="uid://3rraxj51x711" path="res://assets/sprites/monkey_anim.png" id="1_62vtg"]
+[ext_resource type="Script" uid="uid://f5scsqfi240p" path="res://assets/Scenes/Main/level_1.gd" id="1_bgcr8"]
+[ext_resource type="Script" uid="uid://dreeom2gwljkb" path="res://assets/Scenes/Main/tree.gd" id="1_oe1a5"]
+[ext_resource type="Script" uid="uid://dtrkbw6jklp6q" path="res://assets/Scenes/Main/backgrounds.gd" id="1_s8t0b"]
+[ext_resource type="Texture2D" uid="uid://wxs83qgk8kap" path="res://assets/sprites/bosses/lv1/gorilla_anim1.png" id="1_tfxbt"]
+[ext_resource type="Texture2D" uid="uid://b4dy2ywxpld2l" path="res://assets/sprites/background/bg2.png" id="2_2j7s0"]
+[ext_resource type="Texture2D" uid="uid://hweddlc8ktnf" path="res://assets/sprites/bosses/lv1/gorilla_anim2.png" id="2_gto8k"]
+[ext_resource type="Texture2D" uid="uid://bposv66jfir3" path="res://assets/sprites/tree_trunk.png" id="2_my4px"]
+[ext_resource type="Texture2D" uid="uid://eux5wwf3bqp4" path="res://assets/sprites/bosses/lv1/gorilla_anim3.png" id="3_0p86i"]
+[ext_resource type="Script" uid="uid://b2wmxtr4fivne" path="res://assets/Scenes/Main/base-lv1.gd" id="3_otalj"]
+[ext_resource type="Texture2D" uid="uid://b7wwxvlbda2rn" path="res://assets/sprites/bosses/lv1/gorilla_anim4.png" id="4_x8rb2"]
+[ext_resource type="Texture2D" uid="uid://bn7w8bcs2pa4e" path="res://assets/sprites/background/bg1.png" id="5_my4px"]
+[ext_resource type="Texture2D" uid="uid://dd3hgrv2cmkx5" path="res://assets/sprites/bosses/lv1/gorilla_anim5.png" id="5_n20jo"]
+[ext_resource type="Texture2D" uid="uid://bg8r4dfrf46cd" path="res://assets/sprites/bosses/lv1/gorilla_anim6.png" id="6_g6piu"]
+[ext_resource type="Texture2D" uid="uid://uw6yqoa7e651" path="res://assets/sprites/bosses/lv1/gorilla_anim7.png" id="7_s8t0b"]
+[ext_resource type="Texture2D" uid="uid://da8xj3hncnets" path="res://assets/sprites/background/bg3.png" id="7_xd52f"]
+[ext_resource type="Texture2D" uid="uid://dahqw1lq2p4iy" path="res://assets/sprites/bosses/lv1/gorilla_anim8.png" id="8_265ma"]
+[ext_resource type="Script" uid="uid://c83q0tu22we13" path="res://assets/Scenes/Main/boss_1.gd" id="8_qejo8"]
+[ext_resource type="AudioStream" uid="uid://cqgbhs7ssge51" path="res://assets/bgm/game_stage1.ogg" id="8_tds3a"]
+[ext_resource type="PackedScene" uid="uid://cmdbjp2bi8dki" path="res://assets/Scenes/Obstacles/Rock.tscn" id="9_a2u3q"]
+[ext_resource type="Texture2D" uid="uid://u56rqn80a2ad" path="res://assets/sprites/bosses/lv1/gorilla_anim9.png" id="9_srijg"]
+[ext_resource type="FontFile" uid="uid://bm0hbty6yd2e7" path="res://assets/fonts/ari-w9500-display.ttf" id="9_xeyct"]
+[ext_resource type="Script" uid="uid://ck4x6a360sumv" path="res://assets/Scenes/Main/btn_quit.gd" id="10_otalj"]
+[ext_resource type="Texture2D" uid="uid://cp24vtbtergj2" path="res://assets/sprites/button_container.png" id="11_no5a7"]
+[ext_resource type="Script" uid="uid://ciqx4x0xkgkjx" path="res://assets/Scenes/Main/tree_1.gd" id="16_gto8k"]
+[ext_resource type="PackedScene" uid="uid://c3yuycmgo8tkd" path="res://assets/Scenes/Obstacles/Obstacle1.tscn" id="17_0p86i"]
+[ext_resource type="Script" uid="uid://calwm1x0t7upr" path="res://assets/Scenes/Main/tree_2.gd" id="18_x8rb2"]
+[ext_resource type="Script" uid="uid://b8bb6812kslo1" path="res://assets/Scenes/Main/gorilla.gd" id="19_mcaae"]
+[ext_resource type="Script" uid="uid://sk4lo0gobb1r" path="res://assets/Scenes/Main/tree_3.gd" id="19_n20jo"]
+[ext_resource type="Script" uid="uid://bu0qm2xhba27w" path="res://assets/Scenes/Main/monkey_area.gd" id="21_0p86i"]
+[ext_resource type="Script" uid="uid://dqc67jabq0drs" path="res://assets/Scenes/Main/monkey.gd" id="26_g6piu"]
+[ext_resource type="Script" uid="uid://c8kvqm4ptwe5f" path="res://assets/Scenes/Title Screen/btn_play.gd" id="28_265ma"]
+[ext_resource type="FontFile" uid="uid://c6m7yvfavumig" path="res://assets/fonts/terminal-grotesque/terminal-grotesque.ttf" id="29_gsmb4"]
+[ext_resource type="Script" uid="uid://wabmb56a0wtf" path="res://assets/Scenes/Main/score.gd" id="29_srijg"]
+[ext_resource type="FontFile" uid="uid://whhpvqhsl8qc" path="res://assets/fonts/upheaval.ttf" id="32_7bg8i"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gsmb4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tfxbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gto8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0p86i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_x8rb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_n20jo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_g6piu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_s8t0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_265ma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_srijg")
+}],
+"loop": true,
+"name": &"walk_gorilla",
+"speed": 15.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y42gh"]
+atlas = ExtResource("1_62vtg")
+region = Rect2(0, 0, 34, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4bpf"]
+atlas = ExtResource("1_62vtg")
+region = Rect2(34, 0, 34, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oe1a5"]
+atlas = ExtResource("1_62vtg")
+region = Rect2(68, 0, 34, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_my4px"]
+atlas = ExtResource("1_62vtg")
+region = Rect2(102, 0, 34, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2j7s0"]
+atlas = ExtResource("1_62vtg")
+region = Rect2(136, 0, 34, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bgcr8"]
+atlas = ExtResource("1_62vtg")
+region = Rect2(170, 0, 34, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbw36"]
+atlas = ExtResource("1_62vtg")
+region = Rect2(204, 0, 34, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7fss"]
+atlas = ExtResource("1_62vtg")
+region = Rect2(238, 0, 34, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vhif"]
+atlas = ExtResource("1_62vtg")
+region = Rect2(272, 0, 34, 34)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wasfu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y42gh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4bpf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oe1a5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_my4px")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2j7s0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bgcr8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbw36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7fss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vhif")
+}],
+"loop": true,
+"name": &"climb",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7bg8i"]
+size = Vector2(48, 48)
+
+[sub_resource type="Animation" id="Animation_265ma"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GameOver:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(728, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_s8t0b"]
+resource_name = "game_over_screen"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GameOver:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -744), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_265ma"]
+_data = {
+&"RESET": SubResource("Animation_265ma"),
+&"game_over_screen": SubResource("Animation_s8t0b")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_srijg"]
+bg_color = Color(0, 0, 0, 0.36862746)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qejo8"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Animation" id="Animation_a2u3q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LevelPopUp:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_mcaae"]
+resource_name = "show_level"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LevelPopUp:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p1phd"]
+_data = {
+&"RESET": SubResource("Animation_a2u3q"),
+&"show_level": SubResource("Animation_mcaae")
+}
+
+[node name="Game" type="Node2D" unique_id=1894582239]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1669110126]
+stream = ExtResource("8_tds3a")
+autoplay = true
+
+[node name="Backgrounds" type="Node2D" parent="." unique_id=1652667942]
+script = ExtResource("1_s8t0b")
+
+[node name="Level1" type="Node2D" parent="Backgrounds" unique_id=111880032]
+script = ExtResource("1_bgcr8")
+
+[node name="base" type="Sprite2D" parent="Backgrounds/Level1" unique_id=1873798364]
+texture_filter = 1
+position = Vector2(360, 1140)
+scale = Vector2(3, 3)
+texture = ExtResource("5_my4px")
+script = ExtResource("3_otalj")
+
+[node name="base2" type="Sprite2D" parent="Backgrounds/Level1" unique_id=1002581318]
+texture_filter = 1
+position = Vector2(360, 850)
+scale = Vector2(3, 3)
+texture = ExtResource("2_2j7s0")
+
+[node name="base3" type="Sprite2D" parent="Backgrounds/Level1" unique_id=101979730]
+texture_filter = 1
+position = Vector2(360, 560)
+scale = Vector2(3, 3)
+texture = ExtResource("7_xd52f")
+
+[node name="Level 2" type="Node2D" parent="Backgrounds" unique_id=793162497]
+
+[node name="TreeSpawner" type="Node2D" parent="." unique_id=1189407485]
+position = Vector2(240, 0)
+script = ExtResource("1_oe1a5")
+total_rows_to_spawn = 9999
+
+[node name="tree1" type="Sprite2D" parent="TreeSpawner" unique_id=1026603447]
+texture_filter = 1
+rotation = 0.0033004915
+scale = Vector2(3, 3)
+texture = ExtResource("2_my4px")
+script = ExtResource("16_gto8k")
+obstacle_scene = ExtResource("17_0p86i")
+
+[node name="tree2" type="Sprite2D" parent="TreeSpawner" unique_id=207221818]
+texture_filter = 1
+position = Vector2(120, 0)
+scale = Vector2(3, 3)
+texture = ExtResource("2_my4px")
+script = ExtResource("18_x8rb2")
+obstacle_scene = ExtResource("17_0p86i")
+
+[node name="tree3" type="Sprite2D" parent="TreeSpawner" unique_id=1471213068]
+texture_filter = 1
+position = Vector2(240, 0)
+scale = Vector2(3, 3)
+texture = ExtResource("2_my4px")
+script = ExtResource("19_n20jo")
+obstacle_scene = ExtResource("17_0p86i")
+
+[node name="Boss1" type="Node2D" parent="." unique_id=1706675609]
+script = ExtResource("8_qejo8")
+rock_scene = ExtResource("9_a2u3q")
+
+[node name="gorilla" type="AnimatedSprite2D" parent="Boss1" unique_id=566460786]
+z_index = 1
+texture_filter = 1
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_gsmb4")
+animation = &"walk_gorilla"
+frame = 2
+frame_progress = 0.43616065
+script = ExtResource("19_mcaae")
+
+[node name="Timer" type="Timer" parent="Boss1" unique_id=990053301]
+
+[node name="btnQuit" type="Button" parent="." unique_id=1729477015]
+z_index = 2
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 97.0
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.94, 0.54833335, 0, 1)
+theme_override_colors/font_outline_color = Color(0.96, 0.27199996, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_constants/h_separation = 0
+theme_override_constants/align_to_largest_stylebox = 0
+theme_override_fonts/font = ExtResource("9_xeyct")
+theme_override_font_sizes/font_size = 24
+text = "
+"
+flat = true
+autowrap_trim_flags = 0
+icon_alignment = 1
+script = ExtResource("10_otalj")
+
+[node name="flexibleContainer" type="NinePatchRect" parent="btnQuit" unique_id=1571635059]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_no5a7")
+
+[node name="btnLabel" type="Label" parent="btnQuit/flexibleContainer" unique_id=1298883266]
+texture_filter = 1
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 65.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.36666667, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("9_xeyct")
+text = "QUIT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MonkeyArea" type="Area2D" parent="." unique_id=1003124422]
+script = ExtResource("21_0p86i")
+
+[node name="Monkey" type="AnimatedSprite2D" parent="MonkeyArea" unique_id=583143138]
+texture_filter = 1
+position = Vector2(0, 800)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_wasfu")
+animation = &"climb"
+script = ExtResource("26_g6piu")
+
+[node name="collision_monkey" type="CollisionShape2D" parent="MonkeyArea" unique_id=598794296]
+position = Vector2(0, 784)
+shape = SubResource("RectangleShape2D_7bg8i")
+debug_color = Color(0, 1, 0.083333254, 0.41960785)
+
+[node name="GameOver" type="Control" parent="." unique_id=1667212283]
+z_index = 5
+layout_mode = 3
+anchors_preset = 0
+offset_left = 728.0
+offset_right = 768.0
+offset_bottom = 40.0
+
+[node name="GameOverAnim" type="AnimationPlayer" parent="GameOver" unique_id=424497913]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_265ma")
+
+[node name="PanelContainer" type="PanelContainer" parent="GameOver" unique_id=1171920459]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 264.0
+offset_right = 568.0
+offset_bottom = 712.0
+
+[node name="Control" type="Control" parent="GameOver/PanelContainer" unique_id=155283994]
+layout_mode = 2
+
+[node name="MainLabel" type="Label" parent="GameOver/PanelContainer/Control" unique_id=357774010]
+layout_mode = 0
+offset_top = 24.0
+offset_right = 432.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(1, 0.7166667, 0, 1)
+theme_override_fonts/font = ExtResource("9_xeyct")
+theme_override_font_sizes/font_size = 31
+text = "GAME OVER"
+horizontal_alignment = 1
+
+[node name="btnPlay" type="Button" parent="GameOver/PanelContainer/Control" unique_id=1716678281]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -56.0
+offset_right = 18.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.94, 0.54833335, 0, 1)
+theme_override_colors/font_outline_color = Color(0.96, 0.27199996, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_constants/h_separation = 0
+theme_override_constants/align_to_largest_stylebox = 0
+theme_override_fonts/font = ExtResource("9_xeyct")
+theme_override_font_sizes/font_size = 24
+text = "
+"
+flat = true
+autowrap_trim_flags = 0
+icon_alignment = 1
+script = ExtResource("28_265ma")
+
+[node name="flexibleContainer" type="NinePatchRect" parent="GameOver/PanelContainer/Control/btnPlay" unique_id=1169292618]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.002128503
+texture = ExtResource("11_no5a7")
+
+[node name="btnLabel" type="Label" parent="GameOver/PanelContainer/Control/btnPlay/flexibleContainer" unique_id=695085823]
+texture_filter = 1
+layout_mode = 0
+offset_left = 10.018421
+offset_top = 8.645378
+offset_right = 71.01842
+offset_bottom = 31.645378
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.36666667, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("9_xeyct")
+text = "RETRY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="score" type="RichTextLabel" parent="." unique_id=839841469]
+texture_filter = 1
+clip_contents = false
+offset_left = 520.0
+offset_right = 712.0
+offset_bottom = 56.0
+theme_override_fonts/normal_font = ExtResource("29_gsmb4")
+theme_override_font_sizes/normal_font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_srijg")
+text = "score"
+horizontal_alignment = 1
+script = ExtResource("29_srijg")
+
+[node name="LevelInfo" type="Node2D" parent="." unique_id=134541174]
+
+[node name="LevelPopUp" type="Label" parent="LevelInfo" unique_id=377619414]
+z_index = 1
+texture_filter = 1
+offset_left = 176.0
+offset_top = 480.0
+offset_right = 536.0
+offset_bottom = 570.0
+theme_override_colors/font_color = Color(1, 0.68333334, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.6333333, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.25, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("32_7bg8i")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_qejo8")
+text = "LEVEL 1"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LevelInfo" unique_id=1442914286]
+libraries/ = SubResource("AnimationLibrary_p1phd")
+
+[connection signal="button_down" from="btnQuit" to="btnQuit" method="_on_button_down"]
+[connection signal="button_up" from="btnQuit" to="btnQuit" method="_on_button_up"]
+[connection signal="pressed" from="btnQuit" to="btnQuit" method="_on_pressed"]
+[connection signal="button_down" from="GameOver/PanelContainer/Control/btnPlay" to="GameOver/PanelContainer/Control/btnPlay" method="_on_button_down"]
+[connection signal="button_up" from="GameOver/PanelContainer/Control/btnPlay" to="GameOver/PanelContainer/Control/btnPlay" method="_on_button_up"]
+[connection signal="pressed" from="GameOver/PanelContainer/Control/btnPlay" to="GameOver/PanelContainer/Control/btnPlay" method="_on_pressed"]

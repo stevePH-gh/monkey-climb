@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cmdbjp2bi8dki"]
+
+[ext_resource type="Script" uid="uid://cqg5xtdc8ksit" path="res://assets/Scenes/Obstacles/rock.gd" id="1_yhvdr"]
+[ext_resource type="Texture2D" uid="uid://dxl6i06onhtnb" path="res://assets/sprites/obstacles/rock.png" id="2_yhvdr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tlf0p"]
+size = Vector2(12.012016, 12.0120125)
+
+[node name="Node2D" type="Node2D" unique_id=993853784]
+
+[node name="Rock" type="Area2D" parent="." unique_id=687751442]
+z_index = 1
+scale = Vector2(3, 3)
+script = ExtResource("1_yhvdr")
+
+[node name="rock" type="Sprite2D" parent="Rock" unique_id=2014384302]
+texture_filter = 1
+texture = ExtResource("2_yhvdr")
+
+[node name="collision_rock" type="CollisionShape2D" parent="Rock" unique_id=1738641127]
+position = Vector2(-0.33333334, -0.6666667)
+shape = SubResource("RectangleShape2D_tlf0p")
+debug_color = Color(0.96, 0, 0, 0.41960785)
