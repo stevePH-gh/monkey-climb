@@ -11,7 +11,7 @@ var active = false
 
 # --- NEW SPAWN VARIABLES ---
 var rock_timer = 0.0
-@export var spawn_rate = 0.7 # How many seconds between drops
+@export var spawn_rate = 0.7 # ROCK SPAWN RATE
 
 func _ready():
 	hide()

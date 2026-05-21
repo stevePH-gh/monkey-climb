@@ -35,7 +35,6 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_right"):
 		move_right()
 
-# --- ADDED TOUCH FUNCTION ---
 func _input(event):
 	if event is InputEventScreenTouch:
 		if event.pressed:
@@ -57,7 +56,9 @@ func _input(event):
 					move_right()
 					
 func _on_area_entered(area: Area2D):
-	if area.name == "Obstacle1" || area.name == "Rock":
+	
+	
+	if area.name == "Obstacle1" || area.name == "Rock" || area.name == "Droppings" || area.name == "bird_area" || area.name == "meteor_area":
 		print("Hit detected! Resetting safely...") # debug testing
 		
 		#get_tree().paused = true
@@ -76,6 +77,15 @@ func _on_area_entered(area: Area2D):
 		
 		var obs_rock = get_node("../Boss1")
 		obs_rock.process_mode = Node.PROCESS_MODE_DISABLED
+		
+		var obs_poop = get_node("../Boss2")
+		obs_poop.process_mode = Node.PROCESS_MODE_DISABLED
+		
+		var stop_bird = get_node("../BirdSpawner")
+		stop_bird.process_mode =  Node.AUTO_TRANSLATE_MODE_DISABLED
+		
+		var stop_meteor = get_node("../MeteorSpawner")
+		stop_meteor.process_mode = Node.PROCESS_MODE_DISABLED
 		
 		$Monkey.stop()
 		#

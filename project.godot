@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Monkey Commando"
+config/name="Monkey Climb"
 run/main_scene="uid://fhj4aws23l40"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/show_image=false

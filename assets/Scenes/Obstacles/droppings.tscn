@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b6wjbvasexpjf"]
+
+[ext_resource type="Script" uid="uid://bbhvll3g4xkc3" path="res://assets/Scenes/Obstacles/droppings.gd" id="1_qawh7"]
+[ext_resource type="Texture2D" uid="uid://b6uejeokb5fqu" path="res://assets/sprites/obstacles/droppings.png" id="2_t8v26"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tlf0p"]
+size = Vector2(12.012016, 12.0120125)
+
+[node name="Node2D" type="Node2D" unique_id=993853784]
+
+[node name="Droppings" type="Area2D" parent="." unique_id=687751442]
+scale = Vector2(3, 3)
+script = ExtResource("1_qawh7")
+
+[node name="dropping" type="Sprite2D" parent="Droppings" unique_id=2014384302]
+texture_filter = 1
+position = Vector2(-0.33333313, -1.1666675)
+scale = Vector2(0.5797102, 0.65217394)
+texture = ExtResource("2_t8v26")
+
+[node name="collision_poop" type="CollisionShape2D" parent="Droppings" unique_id=1738641127]
+position = Vector2(-0.33333334, -0.6666667)
+shape = SubResource("RectangleShape2D_tlf0p")
+debug_color = Color(0.96, 0, 0, 0.41960785)

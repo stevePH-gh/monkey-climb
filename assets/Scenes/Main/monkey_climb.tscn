@@ -9,16 +9,18 @@
 [ext_resource type="Texture2D" uid="uid://hweddlc8ktnf" path="res://assets/sprites/bosses/lv1/gorilla_anim2.png" id="2_gto8k"]
 [ext_resource type="Texture2D" uid="uid://bposv66jfir3" path="res://assets/sprites/tree_trunk.png" id="2_my4px"]
 [ext_resource type="Texture2D" uid="uid://eux5wwf3bqp4" path="res://assets/sprites/bosses/lv1/gorilla_anim3.png" id="3_0p86i"]
-[ext_resource type="Script" uid="uid://b2wmxtr4fivne" path="res://assets/Scenes/Main/base-lv1.gd" id="3_otalj"]
 [ext_resource type="Texture2D" uid="uid://b7wwxvlbda2rn" path="res://assets/sprites/bosses/lv1/gorilla_anim4.png" id="4_x8rb2"]
 [ext_resource type="Texture2D" uid="uid://bn7w8bcs2pa4e" path="res://assets/sprites/background/bg1.png" id="5_my4px"]
 [ext_resource type="Texture2D" uid="uid://dd3hgrv2cmkx5" path="res://assets/sprites/bosses/lv1/gorilla_anim5.png" id="5_n20jo"]
 [ext_resource type="Texture2D" uid="uid://bg8r4dfrf46cd" path="res://assets/sprites/bosses/lv1/gorilla_anim6.png" id="6_g6piu"]
 [ext_resource type="Texture2D" uid="uid://uw6yqoa7e651" path="res://assets/sprites/bosses/lv1/gorilla_anim7.png" id="7_s8t0b"]
 [ext_resource type="Texture2D" uid="uid://da8xj3hncnets" path="res://assets/sprites/background/bg3.png" id="7_xd52f"]
+[ext_resource type="Script" uid="uid://bfbmdrm5b4eia" path="res://assets/Scenes/Main/level_2.gd" id="7_xs5fh"]
 [ext_resource type="Texture2D" uid="uid://dahqw1lq2p4iy" path="res://assets/sprites/bosses/lv1/gorilla_anim8.png" id="8_265ma"]
 [ext_resource type="Script" uid="uid://c83q0tu22we13" path="res://assets/Scenes/Main/boss_1.gd" id="8_qejo8"]
 [ext_resource type="AudioStream" uid="uid://cqgbhs7ssge51" path="res://assets/bgm/game_stage1.ogg" id="8_tds3a"]
+[ext_resource type="Texture2D" uid="uid://bgxpyj32m03fs" path="res://assets/sprites/background/bg4.png" id="8_xs5fh"]
+[ext_resource type="Texture2D" uid="uid://4qw7evcpmlgl" path="res://assets/sprites/background/bg5.png" id="9_8nts2"]
 [ext_resource type="PackedScene" uid="uid://cmdbjp2bi8dki" path="res://assets/Scenes/Obstacles/Rock.tscn" id="9_a2u3q"]
 [ext_resource type="Texture2D" uid="uid://u56rqn80a2ad" path="res://assets/sprites/bosses/lv1/gorilla_anim9.png" id="9_srijg"]
 [ext_resource type="FontFile" uid="uid://bm0hbty6yd2e7" path="res://assets/fonts/ari-w9500-display.ttf" id="9_xeyct"]
@@ -26,15 +28,33 @@
 [ext_resource type="Texture2D" uid="uid://cp24vtbtergj2" path="res://assets/sprites/button_container.png" id="11_no5a7"]
 [ext_resource type="Script" uid="uid://ciqx4x0xkgkjx" path="res://assets/Scenes/Main/tree_1.gd" id="16_gto8k"]
 [ext_resource type="PackedScene" uid="uid://c3yuycmgo8tkd" path="res://assets/Scenes/Obstacles/Obstacle1.tscn" id="17_0p86i"]
+[ext_resource type="Texture2D" uid="uid://dol41kl8wpgs8" path="res://assets/sprites/obstacles/boss_bird.png" id="18_g7rys"]
 [ext_resource type="Script" uid="uid://calwm1x0t7upr" path="res://assets/Scenes/Main/tree_2.gd" id="18_x8rb2"]
 [ext_resource type="Script" uid="uid://b8bb6812kslo1" path="res://assets/Scenes/Main/gorilla.gd" id="19_mcaae"]
 [ext_resource type="Script" uid="uid://sk4lo0gobb1r" path="res://assets/Scenes/Main/tree_3.gd" id="19_n20jo"]
+[ext_resource type="Script" uid="uid://b1vaodfdfrwl8" path="res://assets/Scenes/Main/boss_2.gd" id="20_b0hhj"]
 [ext_resource type="Script" uid="uid://bu0qm2xhba27w" path="res://assets/Scenes/Main/monkey_area.gd" id="21_0p86i"]
+[ext_resource type="Script" uid="uid://c21o01lxh1tp8" path="res://assets/Scenes/Main/bird.gd" id="21_b0hhj"]
+[ext_resource type="PackedScene" uid="uid://b6wjbvasexpjf" path="res://assets/Scenes/Obstacles/droppings.tscn" id="21_wbeso"]
 [ext_resource type="Script" uid="uid://dqc67jabq0drs" path="res://assets/Scenes/Main/monkey.gd" id="26_g6piu"]
 [ext_resource type="Script" uid="uid://c8kvqm4ptwe5f" path="res://assets/Scenes/Title Screen/btn_play.gd" id="28_265ma"]
 [ext_resource type="FontFile" uid="uid://c6m7yvfavumig" path="res://assets/fonts/terminal-grotesque/terminal-grotesque.ttf" id="29_gsmb4"]
 [ext_resource type="Script" uid="uid://wabmb56a0wtf" path="res://assets/Scenes/Main/score.gd" id="29_srijg"]
 [ext_resource type="FontFile" uid="uid://whhpvqhsl8qc" path="res://assets/fonts/upheaval.ttf" id="32_7bg8i"]
+[ext_resource type="AudioStream" uid="uid://etomosrcoulu" path="res://assets/bgm/game_stage2.ogg" id="35_wbeso"]
+[ext_resource type="Script" uid="uid://bhvskmi3koaup" path="res://assets/Scenes/Main/bird_area.gd" id="36_g7rys"]
+[ext_resource type="AudioStream" uid="uid://bada6ckki3kve" path="res://assets/bgm/game_stage3.ogg" id="36_gaf43"]
+[ext_resource type="Script" uid="uid://h5lnwdp6g5fh" path="res://assets/Scenes/Main/bird_spawner.gd" id="36_p1phd"]
+[ext_resource type="Texture2D" uid="uid://etci4d1uljuc" path="res://assets/sprites/obstacles/eagle_anim.png" id="40_6w7ox"]
+[ext_resource type="Script" uid="uid://bay32marn6egu" path="res://assets/Scenes/Main/bird_sprite.gd" id="41_25qfb"]
+[ext_resource type="AudioStream" uid="uid://dexrd2due53uj" path="res://assets/bgm/game_stage4.ogg" id="43_jafpo"]
+[ext_resource type="Texture2D" uid="uid://cxuuebi8sj8nr" path="res://assets/sprites/target.png" id="44_8nts2"]
+[ext_resource type="AudioStream" uid="uid://bgkgskg208sod" path="res://assets/bgm/game_stage5.ogg" id="44_jcg88"]
+[ext_resource type="PackedScene" uid="uid://c0d373igi6xxg" path="res://assets/Scenes/Obstacles/Laser.tscn" id="45_jcg88"]
+[ext_resource type="Script" uid="uid://cm0sc56jg2vlu" path="res://assets/Scenes/Main/meteor_spawner.gd" id="49_sl4jb"]
+[ext_resource type="Script" uid="uid://ckx4be8kt6nyc" path="res://assets/Scenes/Main/meteor_area.gd" id="49_sn4s3"]
+[ext_resource type="Texture2D" uid="uid://b74y8fjqk2ket" path="res://assets/sprites/obstacles/meteor_anim.png" id="54_jcg88"]
+[ext_resource type="Script" uid="uid://dtapbjubesa6b" path="res://assets/Scenes/Main/meteor_sprite.gd" id="55_scp1a"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gsmb4"]
 animations = [{
@@ -69,6 +89,112 @@ animations = [{
 "loop": true,
 "name": &"walk_gorilla",
 "speed": 15.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpe70"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(0, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sn4s3"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(38, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sl4jb"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(76, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rsu6x"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(114, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jafpo"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(152, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jcg88"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(190, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_scp1a"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(228, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pswug"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(266, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5o758"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(304, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ob47"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(342, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fg3ur"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(380, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8bvc"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(418, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_710b5"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(456, 0, 38, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8m3sb"]
+atlas = ExtResource("18_g7rys")
+region = Rect2(494, 0, 38, 53)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8nts2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpe70")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sn4s3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sl4jb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rsu6x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jafpo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jcg88")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_scp1a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pswug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5o758")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ob47")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fg3ur")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8bvc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_710b5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8m3sb")
+}],
+"loop": true,
+"name": &"bird_swoosh",
+"speed": 24.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y42gh"]
@@ -225,6 +351,91 @@ _data = {
 &"show_level": SubResource("Animation_mcaae")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b0hhj"]
+size = Vector2(12.800001, 7.999997)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xs5fh"]
+atlas = ExtResource("40_6w7ox")
+region = Rect2(0, 0, 25, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nts2"]
+atlas = ExtResource("40_6w7ox")
+region = Rect2(25, 0, 25, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3qds"]
+atlas = ExtResource("40_6w7ox")
+region = Rect2(50, 0, 25, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmvdi"]
+atlas = ExtResource("40_6w7ox")
+region = Rect2(75, 0, 25, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_itet0"]
+atlas = ExtResource("40_6w7ox")
+region = Rect2(50, 0, 25, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dprie"]
+atlas = ExtResource("40_6w7ox")
+region = Rect2(25, 0, 25, 17)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gpe70"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xs5fh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nts2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3qds")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmvdi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_itet0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dprie")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i64gv"]
+atlas = ExtResource("54_jcg88")
+region = Rect2(0, 0, 57, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5cm14"]
+atlas = ExtResource("54_jcg88")
+region = Rect2(0, 22, 57, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mpcft"]
+atlas = ExtResource("54_jcg88")
+region = Rect2(0, 44, 57, 22)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7fnh7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i64gv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5cm14")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mpcft")
+}],
+"loop": true,
+"name": &"default",
+"speed": 18.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sl4jb"]
+size = Vector2(20.800003, 9.599997)
+
 [node name="Game" type="Node2D" unique_id=1894582239]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1669110126]
@@ -242,7 +453,6 @@ texture_filter = 1
 position = Vector2(360, 1140)
 scale = Vector2(3, 3)
 texture = ExtResource("5_my4px")
-script = ExtResource("3_otalj")
 
 [node name="base2" type="Sprite2D" parent="Backgrounds/Level1" unique_id=1002581318]
 texture_filter = 1
@@ -257,6 +467,19 @@ scale = Vector2(3, 3)
 texture = ExtResource("7_xd52f")
 
 [node name="Level 2" type="Node2D" parent="Backgrounds" unique_id=793162497]
+script = ExtResource("7_xs5fh")
+
+[node name="base" type="Sprite2D" parent="Backgrounds/Level 2" unique_id=1358235143]
+texture_filter = 1
+position = Vector2(360, 272)
+scale = Vector2(3, 3)
+texture = ExtResource("8_xs5fh")
+
+[node name="base2" type="Sprite2D" parent="Backgrounds/Level 2" unique_id=328920392]
+texture_filter = 1
+position = Vector2(360, -16)
+scale = Vector2(3, 3)
+texture = ExtResource("9_8nts2")
 
 [node name="TreeSpawner" type="Node2D" parent="." unique_id=1189407485]
 position = Vector2(240, 0)
@@ -288,6 +511,7 @@ script = ExtResource("19_n20jo")
 obstacle_scene = ExtResource("17_0p86i")
 
 [node name="Boss1" type="Node2D" parent="." unique_id=1706675609]
+visible = false
 script = ExtResource("8_qejo8")
 rock_scene = ExtResource("9_a2u3q")
 
@@ -297,11 +521,25 @@ texture_filter = 1
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_gsmb4")
 animation = &"walk_gorilla"
-frame = 2
-frame_progress = 0.43616065
 script = ExtResource("19_mcaae")
 
-[node name="Timer" type="Timer" parent="Boss1" unique_id=990053301]
+[node name="Timer" type="Timer" parent="Boss1" unique_id=1236676129]
+
+[node name="Boss2" type="Node2D" parent="." unique_id=1363863891]
+visible = false
+position = Vector2(-128, -56)
+script = ExtResource("20_b0hhj")
+drop_scene = ExtResource("21_wbeso")
+
+[node name="Bird" type="AnimatedSprite2D" parent="Boss2" unique_id=2068080270]
+z_index = 1
+texture_filter = 1
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_8nts2")
+animation = &"bird_swoosh"
+script = ExtResource("21_b0hhj")
+
+[node name="Timer" type="Timer" parent="Boss2" unique_id=36628214]
 
 [node name="btnQuit" type="Button" parent="." unique_id=1729477015]
 z_index = 2
@@ -475,6 +713,12 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_srijg")
 text = "score"
 horizontal_alignment = 1
 script = ExtResource("29_srijg")
+lv2_music = ExtResource("35_wbeso")
+lv3_music = ExtResource("36_gaf43")
+lv4_music = ExtResource("43_jafpo")
+lv5_music = ExtResource("44_jcg88")
+snake_scene = ExtResource("17_0p86i")
+laser_scene = ExtResource("45_jcg88")
 
 [node name="LevelInfo" type="Node2D" parent="." unique_id=134541174]
 
@@ -498,6 +742,62 @@ horizontal_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="LevelInfo" unique_id=1442914286]
 libraries/ = SubResource("AnimationLibrary_p1phd")
+
+[node name="BirdSpawner" type="Node2D" parent="." unique_id=623549813]
+scale = Vector2(5, 5)
+script = ExtResource("36_p1phd")
+
+[node name="bird_target" type="Sprite2D" parent="BirdSpawner" unique_id=883129964]
+texture_filter = 1
+position = Vector2(-25.599998, 8.000001)
+scale = Vector2(0.49999997, 0.49999997)
+texture = ExtResource("44_8nts2")
+
+[node name="bird_area" type="Area2D" parent="BirdSpawner" unique_id=1977268663]
+script = ExtResource("36_g7rys")
+
+[node name="collision_bird" type="CollisionShape2D" parent="BirdSpawner/bird_area" unique_id=1011716825]
+position = Vector2(-1.5999994, -2.3999975)
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_b0hhj")
+debug_color = Color(0.7, 0, 0, 0.41960785)
+
+[node name="bird_sprite" type="AnimatedSprite2D" parent="BirdSpawner/bird_area" unique_id=1000103110]
+texture_filter = 1
+position = Vector2(-6.1035157e-06, -1.6)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_gpe70")
+frame = 1
+frame_progress = 0.87712705
+script = ExtResource("41_25qfb")
+
+[node name="MeteorSpawner" type="Node2D" parent="." unique_id=961751558]
+scale = Vector2(5, 5)
+script = ExtResource("49_sl4jb")
+
+[node name="meteor_target" type="Sprite2D" parent="MeteorSpawner" unique_id=277404254]
+texture_filter = 1
+position = Vector2(-25.6, 24)
+scale = Vector2(0.49999997, 0.49999997)
+texture = ExtResource("44_8nts2")
+
+[node name="meteor_area" type="Area2D" parent="MeteorSpawner" unique_id=1295868070]
+script = ExtResource("49_sn4s3")
+
+[node name="meteor_sprite" type="AnimatedSprite2D" parent="MeteorSpawner/meteor_area" unique_id=1398419133]
+z_index = 1
+texture_filter = 1
+position = Vector2(11.949997, 0.24999924)
+scale = Vector2(0.6999999, 0.6999999)
+sprite_frames = SubResource("SpriteFrames_7fnh7")
+frame_progress = 0.68275976
+script = ExtResource("55_scp1a")
+
+[node name="collision_meteor" type="CollisionShape2D" parent="MeteorSpawner/meteor_area" unique_id=1018170071]
+position = Vector2(3.9499903, 0.24999923)
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_sl4jb")
+debug_color = Color(0.97, 0, 0, 0.41960785)
 
 [connection signal="button_down" from="btnQuit" to="btnQuit" method="_on_button_down"]
 [connection signal="button_up" from="btnQuit" to="btnQuit" method="_on_button_up"]

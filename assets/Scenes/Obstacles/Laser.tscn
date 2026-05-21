@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://c0d373igi6xxg"]
+
+[ext_resource type="Texture2D" uid="uid://ubwb6cxfs8" path="res://assets/sprites/obstacles/laser_anim.png" id="1_2g1an"]
+[ext_resource type="Script" uid="uid://rhfdy3djkqah" path="res://assets/Scenes/Obstacles/laser_sprite.gd" id="2_2g1an"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a3f7l"]
+size = Vector2(26, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ptmn7"]
+atlas = ExtResource("1_2g1an")
+region = Rect2(0, 0, 32, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8x7wv"]
+atlas = ExtResource("1_2g1an")
+region = Rect2(32, 0, 32, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3k5dj"]
+atlas = ExtResource("1_2g1an")
+region = Rect2(0, 10, 32, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlbd7"]
+atlas = ExtResource("1_2g1an")
+region = Rect2(32, 10, 32, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tdfh"]
+atlas = ExtResource("1_2g1an")
+region = Rect2(0, 10, 32, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bgf5"]
+atlas = ExtResource("1_2g1an")
+region = Rect2(32, 0, 32, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5qbl6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ptmn7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8x7wv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3k5dj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nlbd7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7tdfh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5bgf5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1357595032]
+
+[node name="Lasers" type="Area2D" parent="." unique_id=207076070]
+
+[node name="collision_laser" type="CollisionShape2D" parent="Lasers" unique_id=701226287]
+shape = SubResource("RectangleShape2D_a3f7l")
+
+[node name="laser_sprite" type="AnimatedSprite2D" parent="Lasers" unique_id=112032497]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_5qbl6")
+frame_progress = 0.5911948
+script = ExtResource("2_2g1an")

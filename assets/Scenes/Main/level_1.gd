@@ -5,7 +5,7 @@ extends Node2D
 var bg_height
 var bg_tiles = []
 
-var bg_count = 6
+var bg_count = 2
 
 # Inside your Level1 script (the one with the bg tiles)
 
